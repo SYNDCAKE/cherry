@@ -68,4 +68,5 @@ def attack():
     for current_thread in all_threads:
         current_thread.join()
 
-attack()
+if __name__ = '__main__':        
+    attack()
