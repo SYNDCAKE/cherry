@@ -35,7 +35,7 @@ print("                       1.1.0                                             
 print("                  -> expect us <-                                                   ")
 print("<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>                                                    ")
 
-mode = int(input("[~] Enter Mode (1,2) | 1 = IP Attack, 2 = Website Attack -> "))
+mode = int(input("[~] Enter Mode (1,2) | 1 = IP Attack, 2 = HTTP Attack -> "))
 
 sys.setrecursionlimit(1000000)
 
